@@ -59,7 +59,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/microservices-project.git
+git clone https://github.com/yourusername/microservicesV2-project.git
 cd microservices-project
 Start the components in the following order:
 
@@ -70,7 +70,7 @@ Department Server
 API Gateway
 Access services through API Gateway:
 
-API Gateway URL: http://localhost:8080
+API Gateway URL: http://localhost:8060
 Service URLs: Refer to respective service documentation for endpoints.
 Explore tracing data with Zipkin:
 
