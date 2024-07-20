@@ -23,9 +23,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the packaged jar file from the first stage
-COPY --from=build /app/target/config-server-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/service-registry-0.0.1-SNAPSHOT.jar.original app.jar
+
 # Expose the port the app runs on
-EXPOSE 8088
+EXPOSE 8761
 
 # Set the startup command to run the jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
