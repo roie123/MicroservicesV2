@@ -23,10 +23,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the packaged jar file from the first stage
-COPY --from=build /app/target/api-gateway-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/department-service-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port the app runs on
-EXPOSE 8060
+EXPOSE 8081
 
 # Set the startup command to run the jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
